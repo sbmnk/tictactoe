@@ -1,13 +1,30 @@
-<!DOCTYPE html>
+<!DOCTYPE html encoding='utf-8'>
 <html lang="en">
 <head>
+   <meta charset="utf-8"/>
   <title>A JavaScript project</title>
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <h1>A JavaScript project</h1>
-  <div id="app"></div>
+  <h1>Tic Tac Toe</h1>
+  <table>
+    <tr>
+      <td id='col-00' onclick="g.makeMove(0,0)"></td>
+      <td id='col-01' onclick="g.makeMove(0,1)" class="vert"></td>
+      <td id='col-02' onclick="g.makeMove(0,2)"></td>
+    </tr>
+    <tr>
+      <td id='col-10' onclick="g.makeMove(1,0)" class="hori"></td>
+      <td id='col-11' onclick="g.makeMove(1,1)"class="vert hori"></td>
+      <td id='col-12' onclick="g.makeMove(1,2)"class="hori"></td>
+    </tr>
+    <tr>
+      <td id='col-20'onclick="g.makeMove(2,0)"></td>
+      <td id='col-21'onclick="g.makeMove(2,1)" class="vert"></td>
+      <td id='col-22'onclick="g.makeMove(2,2)"></td>
+    </tr>
+  </table>
   <script src="main.js"></script>
 </body>
 </html>
